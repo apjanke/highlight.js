@@ -31,8 +31,8 @@ The name of the file is used as a short language identifier and should be usable
 3. Add language metadata
 ----------------------------
 
-At the top of the file there is a specially formatted comment with meta data processed by a build system.
-Meta data format is simply key-value pairs each occupying its own line:
+At the top of the file there is a specially formatted comment with metadata processed by a build system.
+Metadata format is simply key-value pairs each occupying its own line:
 
 ::
 
@@ -74,7 +74,7 @@ language repository: ``css-class-reference.md``
 
 Describe shortly names of all meaningful modes used in your language definition.
 
-Note: If you use custom classes please be aware that all the build-in themes
+Note: If you use custom classes please be aware that all the built-in themes
 are not going to support your custom classes and you should likely also
 distribute your own custom theme.
 

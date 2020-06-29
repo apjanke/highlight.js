@@ -5,7 +5,7 @@ Highlighting overview
 ---------------------
 
 Programming language code consists of parts with different rules of parsing: keywords like ``for`` or ``if``
-don't make sense inside strings, strings may contain backslash-escaped symbols like ``\"``
+don't make sense inside strings, strings may contain backslash-escaped symbols like ``\"``,
 and comments usually don't contain anything interesting except the end of the comment.
 
 In highlight.js such parts are called "modes".
@@ -88,7 +88,7 @@ object each property of which defines its own group of keywords:
   }
 
 The group name becomes the class name in the generated markup enabling different
-themeing for different kinds of keywords.
+theming for different kinds of keywords.
 
 To detect keywords highlight.js breaks the processed chunk of code into separate
 words — a process called lexing. By default "words" are matched with the regexp
@@ -174,7 +174,7 @@ Modes usually generate actual highlighting markup — ``<span>`` elements with s
     ]
   }
 
-Names are not required to be unique, it's quite common to have several definitions with the same name.
+Names are not required to be unique; it's quite common to have several definitions with the same name.
 For example, many languages have various syntaxes for strings, comments, etc…
 
 Sometimes modes are defined only to support specific parsing rules and aren't needed in the final markup.
@@ -203,7 +203,7 @@ Relevance
 ---------
 
 Highlight.js tries to automatically detect the language of a code fragment.
-The heuristics is essentially simple: it tries to highlight a fragment with all the language definitions
+The heuristic is essentially simple: it tries to highlight a fragment with all the language definitions
 and the one that yields most specific modes and keywords wins. The job of a language definition
 is to help this heuristics by hinting relative relevance (or irrelevance) of modes.
 
